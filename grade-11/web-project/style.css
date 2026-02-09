@@ -26,14 +26,12 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .logo img {
-  height: 30px;
-  background: white;
-  border-radius: 50%;
-  padding: 2px;
+  height: 40px;
+  padding: 1px;
 }
 
 .site-name {
