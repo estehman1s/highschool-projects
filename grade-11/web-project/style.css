@@ -86,13 +86,81 @@
   background-color: #00b845; /* Slightly darker on hover */
 }
 
-/* --- Footer Adjustments (Centering) --- */
+/* --- Footer Styling --- */
+.netflix-footer {
+  background-color: #171c22; /* Letterboxd dark footer blue-grey */
+  color: #9ab; /* Muted text color */
+  padding: 30px 0 30px 0;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #2c3440;
+}
+
 .footer-inner {
-  max-width: 950px; /* Match the header width */
+  max-width: 950px; /* Centering content with the header */
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 2fr 1fr 1fr 1fr; /* First column is wider for the logo/desc */
   gap: 40px;
 }
 
+/* Column Headers */
+.footer-col h3 {
+  font-family: 'Lora', Georgia, serif; /* Using the serif font for the brand name */
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: lowercase; /* Matching the logo style */
+  letter-spacing: -1px;
+}
+
+.footer-col h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+/* Footer Content & Links */
+.footer-col p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #9ab;
+  max-width: 250px;
+}
+
+.footer-col a {
+  display: block;
+  color: #678; /* Slightly darker grey for links */
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #fff; /* Links turn white on hover like Letterboxd */
+}
+
+/* Footer Bottom Credit */
+.footer-bottom {
+  max-width: 950px;
+  margin: 40px auto 0 auto;
+  padding: 20px 20px 0 20px;
+  text-align: left; /* Letterboxd usually aligns this left or center */
+  font-size: 0.75rem;
+  color: #678;
+  border-top: 1px solid #2c3440;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
